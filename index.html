@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre cursos tecnológicos de programación, desarrollo web y bases de datos en TechCursos.">
+
+    <title>TechCursos | Aprende tecnología</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <a class="logo" href="#inicio" aria-label="TechCursos, ir al inicio">
+            TechCursos<span>.</span>
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#metodologia">Metodología</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+            <p class="etiqueta">FORMACIÓN TECNOLÓGICA</p>
+
+            <h1 id="titulo-principal">
+                Aprende tecnología.
+                Construye tu futuro.
+            </h1>
+
+            <p class="texto-principal">
+                Desarrolla nuevas habilidades con cursos de programación,
+                diseño web y herramientas digitales.
+            </p>
+
+            <a class="boton" href="#cursos">Explorar cursos</a>
+        </section>
+
+        <section id="cursos" class="seccion" aria-labelledby="titulo-cursos">
+            <h2 id="titulo-cursos">Nuestros cursos</h2>
+
+            <p class="introduccion">
+                Explora diferentes áreas tecnológicas y encuentra
+                la formación adecuada para comenzar.
+            </p>
+
+            
+            <div class="filtros-cursos">
+            <button type="button" class="filtro activo" data-filtro="todos">
+                Todos
+            </button>
+
+            <button type="button" class="filtro" data-filtro="desarrollo">
+                Desarrollo web
+            </button>
+
+            <button type="button" class="filtro" data-filtro="programacion">
+                Programación
+            </button>
+
+            <button type="button" class="filtro" data-filtro="datos">
+                Bases de datos
+            </button>
+            </div>
+
+            <div class="contenedor-cursos">
+
+
+                <article class="tarjeta-curso" data-categoria="desarrollo">
+                    <img src="img/web.jpg" alt="Imagen de desarrollo web">
+
+                    <h3>Desarrollo web</h3>
+                    <p>
+                        Aprende a crear páginas web con HTML, CSS y JavaScript.
+                    </p>
+                    <p class="nivel">Nivel: principiante</p>
+                </article>
+
+                <article class="tarjeta-curso" data-categoria="programacion">
+                    <img src="img/programacion.jpg" alt="Imagen de programación">
+
+                    <h3>Programación</h3>
+                    <p>
+                        Conoce los fundamentos de la lógica y la programación.
+                    </p>
+                    <p class="nivel">Nivel: principiante</p>
+                </article>
+
+                <article class="tarjeta-curso" data-categoria="datos">
+                    <img src="img/bases-datos.jpg" alt="Imagen de bases de datos">
+
+                    <h3>Bases de datos</h3>
+                    <p>
+                        Descubre cómo organizar y gestionar información.
+                    </p>
+                    <p class="nivel">Nivel: introductorio</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="metodologia" class="seccion seccion-alterna"
+            aria-labelledby="titulo-metodologia">
+
+            <h2 id="titulo-metodologia">Nuestra metodología</h2>
+
+            <p class="introduccion">
+                Aprenderás combinando teoría, ejercicios y proyectos.
+            </p>
+
+            <div class="bloque-metodologia">
+                <article>
+                    <h3>01. Aprende</h3>
+                    <p>Comprende los conceptos fundamentales.</p>
+                </article>
+
+                <article>
+                    <h3>02. Practica</h3>
+                    <p>Resuelve ejercicios y experimenta con el código.</p>
+                </article>
+
+                <article>
+                    <h3>03. Crea</h3>
+                    <p>Aplica lo aprendido en proyectos tecnológicos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="beneficios" class="seccion"
+            aria-labelledby="titulo-beneficios">
+
+            <h2 id="titulo-beneficios">¿Por qué aprender con TechCursos?</h2>
+
+            <ul class="lista-beneficios">
+                <li>Desarrolla habilidades digitales.</li>
+                <li>Aprende mediante ejercicios prácticos.</li>
+                <li>Construye proyectos para tu portafolio.</li>
+                <li>Avanza paso a paso desde los fundamentos.</li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="seccion seccion-alterna"
+            aria-labelledby="titulo-contacto">
+
+            <h2 id="titulo-contacto">Solicita información</h2>
+
+            <p class="introduccion">
+                Completa el formulario e indica qué curso te interesa.
+            </p>
+
+            <form id="formulario-contacto">
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre"
+                        autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo"
+                        autocomplete="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="curso">Curso de interés</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecciona un curso</option>
+                        <option value="web">Desarrollo web</option>
+                        <option value="programacion">Programación</option>
+                        <option value="datos">Bases de datos</option>
+                    </select>
+                </div>
+
+                <button class="boton" type="submit">
+                    Enviar solicitud
+                </button>
+
+                <p id="mensaje-formulario" role="status"
+                    aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>TechCursos | Proyecto académico de Aplicaciones Web</p>
+        <p>Aprende tecnología. Construye tu futuro.</p>
+    </footer>
+
+</body>
+</html>

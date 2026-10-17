@@ -1,0 +1,339 @@
+
+/* Estilos generales de TechCursos */
+
+:root {
+    --azul: #10243a;
+    --turquesa: #087f73;
+    --blanco: #ffffff;
+    --fondo: #f3f7fb;
+    --texto: #263445;
+    --gris: #657386;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--blanco);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--turquesa);
+    outline-offset: 4px;
+}
+
+/* Encabezado y menú */
+
+.encabezado {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 18px 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--turquesa);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 22px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: var(--turquesa);
+}
+
+/* Presentación principal */
+
+.hero {
+    background: linear-gradient(135deg, var(--azul), #1c4964);
+    color: var(--blanco);
+    text-align: center;
+    padding: 75px 7%;
+}
+
+.etiqueta {
+    color: #68eadb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 18px auto;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--turquesa);
+    color: #082b32;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #45d8c8;
+}
+
+/* Secciones */
+
+.seccion {
+    padding: 55px 7%;
+}
+
+.seccion h2 {
+    color: var(--azul);
+    text-align: center;
+    font-size: 29px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.introduccion {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.seccion-alterna {
+    background-color: var(--fondo);
+}
+
+/* Tarjetas de cursos */
+
+.contenedor-cursos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.tarjeta-curso {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0e8ef;
+    box-shadow: 0 5px 16px rgba(16, 36, 58, 0.07);
+}
+
+.tarjeta-curso h3 {
+    color: var(--azul);
+    margin-top: 0;
+}
+
+.nivel {
+    color: #087d72;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Metodología */
+
+.bloque-metodologia {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.bloque-metodologia article {
+    background-color: var(--blanco);
+    padding: 22px;
+    border-left: 4px solid var(--turquesa);
+    border-radius: 6px;
+}
+
+.bloque-metodologia h3 {
+    color: var(--azul);
+    margin-top: 0;
+}
+
+/* Beneficios */
+
+.lista-beneficios {
+    max-width: 650px;
+    margin: 25px auto 0;
+    padding-left: 25px;
+}
+
+.lista-beneficios li {
+    margin-bottom: 12px;
+}
+
+/* Formulario */
+
+#formulario-contacto {
+    max-width: 550px;
+    margin: 25px auto 0;
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(16, 36, 58, 0.08);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aab8c5;
+    border-radius: 6px;
+    background-color: var(--blanco);
+    color: var(--texto);
+    font: inherit;
+}
+
+#mensaje-formulario {
+    font-weight: bold;
+}
+
+/* Pie de página */
+
+.pie-pagina {
+    background-color: var(--azul);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px 7%;
+    font-size: 14px;
+}
+
+/* Adaptación para tabletas */
+
+@media (min-width: 600px) {
+    .encabezado {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+    }
+
+    .contenedor-cursos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bloque-metodologia {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Adaptación para computadoras */
+
+@media (min-width: 900px) {
+    .encabezado {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .hero {
+        padding: 100px 12%;
+    }
+
+    .seccion {
+        padding: 75px 10%;
+    }
+
+    .contenedor-cursos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bloque-metodologia {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Botones para filtrar los cursos */
+
+.filtros-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.filtro {
+    padding: 10px 16px;
+    border: 1px solid var(--turquesa);
+    border-radius: 6px;
+    background-color: var(--blanco);
+    color: var(--azul);
+    cursor: pointer;
+}
+
+.filtro:hover,
+.filtro.activo {
+    background-color: var(--turquesa);
+    color: var(--azul);
+}
+
+/* Imagen de cada curso */
+.tarjeta-curso img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
